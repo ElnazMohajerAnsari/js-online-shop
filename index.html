@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shop</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <div class="container-fluid bg-secondary py-3 px-sm-5">
+      <header id="header" class="row align-items-center">
+        <div class="text-start col-4 col-xs-4 mb-lg-0">
+          <figure class="profile d-flex align-items-center">
+            <img
+              class="profile-picture"
+              src="./img/profile.png"
+              alt="Profile Picture"
+            />
+            <p class="d-xs-none ms-3 pt-3">Hi, James</p>
+          </figure>
+        </div>
+        <div class="col-4 col-xs-4 text-center">
+          <div class="logo-container px-lg-5">
+            <p id="logo" class="logo py-3 mx border border-dark">Online Shop</p>
+          </div>
+        </div>
+        <div class="col-4 col-xs-4">
+          <div class="p-2 d-flex justify-content-end align-items-center">
+            <p class="mx-1 my-2">Cart</p>
+            <div id="cart-amount" class="rounded-circle p-1">0</div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <section class="container-fluid py-3 px-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-4 pt-xs-4">
+          <div class="input-group">
+            <button
+              type="button"
+              id="search-btn"
+              class="btn border-end-0 border-dark rounded-start"
+            >
+              <i class="bi bi-search"></i>
+            </button>
+            <input
+              type="search"
+              id="search-input"
+              class="form-control border-start-0 border-dark rounded-end"
+            />
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-4 pt-xs-4">
+          <select id="select" class="custom-select mb-3">
+            <option selected>Category</option>
+            <option value="1">WOMAN</option>
+            <option value="2">MAN</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid py-3 px-sm-5 pb-4">
+      <div id="products" class="row"></div>
+    </section>
+  </body>
+
+  <script src="product-list.js"></script>
+  <script src="main.js"></script>
+</html>
